@@ -1,0 +1,20 @@
+name: 게임 문의·오류 신고
+description: 오류, 접근성 또는 이용 문의를 남겨 주세요.
+body:
+  - type: markdown
+    attributes:
+      value: "개인정보·인증 토큰·다른 참가자의 이름은 올리지 마세요. 본인 정보 삭제는 게임 설정에서 가능합니다."
+  - type: dropdown
+    id: category
+    attributes:
+      label: 문의 종류
+      options: [게임 진행 오류, 화면·접근성, 개인정보 처리, 기타 이용 문의]
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 어떤 문제가 있었나요?
+      description: 발생 시각, OS·토스앱 버전, 재현 순서를 적어 주세요. 민감 정보는 제외해 주세요.
+    validations:
+      required: true
